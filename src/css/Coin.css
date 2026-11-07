@@ -1,0 +1,76 @@
+.coin-stage {
+  position: relative;
+  width: var(--coin-w);
+  height: calc(var(--coin-h) + 56px);
+  padding-top: 32px;
+  box-sizing: border-box;
+}
+
+/* ngambang: naik-turun patah-patah ala 8-bit */
+.coin-float.is-floating {
+  animation: coin-bob 1.2s steps(6) infinite alternate;
+}
+
+.coin {
+  display: block;
+  width: var(--coin-w);
+  height: var(--coin-h);
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: calc(var(--coin-w) * var(--frames)) 100%;
+  background-position: 0 0;
+  image-rendering: pixelated;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.coin:focus-visible {
+  outline: 2px dashed currentColor;
+  outline-offset: 6px;
+}
+
+/* klik: 16 frame sprite + lompat kecil */
+.coin.is-spinning {
+  animation:
+    coin-frames 0.8s steps(var(--frames)) 1,
+    coin-pop 0.8s steps(8) 1;
+}
+
+.coin-shadow {
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  width: 70%;
+  height: 8px;
+  margin-left: -35%;
+  background: #6b3a00;
+  opacity: 0.25;
+}
+.coin-shadow.is-floating {
+  animation: coin-shadow 1.2s steps(6) infinite alternate;
+}
+
+@keyframes coin-bob {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-16px); }
+}
+@keyframes coin-shadow {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(0.72); }
+}
+@keyframes coin-frames {
+  to { background-position: calc(var(--coin-w) * var(--frames) * -1) 0; }
+}
+@keyframes coin-pop {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-28px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coin-float.is-floating,
+  .coin-shadow.is-floating {
+    animation: none;
+  }
+}

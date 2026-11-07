@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Space+Mono:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-desk: #d9d4c7;
+  --color-cream: #f1ece0;
+  --color-ink: #25252b;
+  --color-maroon: #7a2a3a;
+  --color-navy: #1f3f8f;
+  --color-silver: #c9c5ba;
+  --color-hi: #fffdf6;
+  --color-shade: #7d796f;
+
+  --font-pixel: "Pixelify Sans", "Courier New", monospace;
+  --font-retro: "Space Mono", "Courier New", monospace;
+
+  --shadow-win:
+    inset 2px 2px 0 var(--color-hi), inset -3px -3px 0 var(--color-shade);
+  --shadow-bevel:
+    inset 2px 2px 0 var(--color-hi), inset -2px -2px 0 var(--color-shade),
+    3px 3px 0 var(--color-ink);
+  --shadow-bevel-down:
+    inset 2px 2px 0 var(--color-shade), inset -2px -2px 0 var(--color-hi),
+    1px 1px 0 var(--color-ink);
+
+  --animate-blink: blink 1s steps(1) infinite;
+  --animate-twinkle: twinkle 2s ease-in-out infinite;
+  --animate-marquee: marquee 28s linear infinite;
+  --animate-ping-green: ping-green 1.4s infinite;
+  --animate-boot-line: boot-line 0.01s forwards;
+  --animate-boot-bar: boot-bar 2.3s steps(16) forwards;
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes boot-line {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes boot-bar {
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes twinkle {
+    50% {
+      opacity: 0.2;
+      transform: scale(0.7);
+    }
+  }
+  @keyframes marquee {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes ping-green {
+    0% {
+      box-shadow: 0 0 0 0 rgb(46 160 67 / 0.6);
+    }
+    100% {
+      box-shadow: 0 0 0 8px rgb(46 160 67 / 0);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+body {
+  @apply bg-desk font-retro text-ink;
+  font-size: clamp(15px, 1.3vw, 21px);
+  line-height: 1.6;
+}
+::selection {
+  background: var(--color-navy);
+  color: #fff;
+}
+:focus-visible {
+  outline: 3px dashed var(--color-maroon);
+  outline-offset: 2px;
+}
+
+/* motif titik halus di dalam jendela */
+.dots {
+  background-image: radial-gradient(rgb(0 0 0 / 0.09) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
