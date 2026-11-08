@@ -5,10 +5,10 @@ export default function Skill() {
       <WindowFrame title="▣ Skill.exe" tone="navy" status="Skill.exe — Ready">
         <div className="dots relative flex justify-center px-[clamp(20px,5vw,80px)] pt-5 pb-9">
           <div>
-            <div></div>
+            <div>Baris asts</div>
           </div>
           <div>
-            <div></div>
+            <div>baris bawah</div>
           </div>
         </div>
       </WindowFrame>
