@@ -8,6 +8,7 @@ export default function App() {
     <>
       <Boot />
       <main>
+        <img src="/assets/tools/html.png" alt="tes" width="80" />
         <Welcome />
         <About />
         <Skill />

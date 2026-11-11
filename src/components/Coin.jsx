@@ -1,5 +1,5 @@
 import { useState } from "react";
-import spriteSheet from "../../public/assets/profile/coin_spritesheet.png";
+import spriteSheet from "/assets/profile/coin_spritesheet.png";
 import "../css/Coin.css";
 
 const FRAMES = 16; // jumlah frame di sprite sheet
