@@ -1,16 +1,81 @@
-# React + Vite
+# 🖥️ Portfolio Arfansyah Saputra
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Fitur
 
-Currently, two official plugins are available:
+- **Layar boot BIOS** saat halaman pertama kali dibuka, lalu memudar ke halaman utama.
+- **Section full-screen** dalam jendela Windows 95: Welcome, About & Experience, Skills, Projects, dan Contact.
+- **Ikon desktop** di halaman Welcome untuk berpindah section dengan cepat.
+- **Taskbar + Start menu** di bagian bawah layar. Tombol section yang sedang tampil otomatis menyala, dan ada jam di kanan.
+- **Efek ketik** pada judul role dan **teks berjalan** (marquee) di bawah Welcome.
+- **Timeline pengalaman** dan **grid skill** dengan ikon teknologi.
+- **Kartu project** dengan screenshot dalam bingkai browser mini. Klik gambar untuk melihat versi besar di jendela pop-up.
+- **Form kontak** yang membuka aplikasi email dengan subjek dan isi pesan yang sudah terisi.
+- **Responsif** untuk layar HP sampai desktop.
+- **Ramah aksesibilitas:** animasi otomatis berhenti jika perangkat memakai pengaturan _reduce motion_, dan elemen bisa dipakai dengan keyboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Teknologi
 
-## React Compiler
+| Library | [React](https://react.dev) |
+| Build tool | [Vite](https://vite.dev) |
+| Styling | [Tailwind CSS v4](https://tailwindcss.com) |
+| Font | Pixelify Sans dan Space Mono (Google Fonts) |
+| Hosting | [Vercel](https://vercel.com) |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Menjalankan di Komputer
 
-## Expanding the ESLint configuration
+Butuh [Node.js](https://nodejs.org) versi LTS.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# 1. Unduh project
+git clone https://github.com/ArfanSyah/NAMA-REPOSITORY.git
+cd NAMA-REPOSITORY
+
+# 2. Pasang dependensi
+npm install
+
+# 3. Jalankan server pengembangan
+npm run dev
+```
+
+Buka alamat yang tampil di terminal (biasanya `http://localhost:5173`).
+
+Perintah lain:
+
+```bash
+npm run build     # membuat versi produksi di folder dist/
+npm run preview   # mencoba hasil build secara lokal
+npm run lint      # memeriksa kode dengan ESLint
+```
+
+## ✏️ Mengubah Konten
+
+Semua teks dan data ada di folder `src/data/`, jadi kamu tidak perlu menyentuh komponen.
+
+| Yang ingin diubah | File |
+| Foto profil, link CV, role, statistik, ikon desktop, teks berjalan | `src/data/welcome.js` |
+| Riwayat pengalaman | `src/data/experience.js` |
+| Daftar skill | `src/data/skills.js` (gambar di `public/assets/tools/`) |
+| Project, label, dan link demo atau source | `src/data/projects.js` (gambar di `public/assets/proyek/`) |
+| Email, GitHub, LinkedIn | `src/data/contact.js` |
+| Menu Start dan tombol taskbar | `src/data/navigation.js` |
+| Teks layar boot dan durasinya | `src/data/boot.js` |
+| Warna, font, bayangan, dan animasi | `src/index.css` (blok `@theme`) |
+
+**Catatan penting**
+
+- File di `public/` dipanggil dengan path yang diawali `/`, **tanpa** kata `public`. Contoh: `/assets/tools/html.png`.
+- `id` tiap `<section>` harus sama dengan yang ada di `data/navigation.js`: `home`, `about`, `skills`, `projects`, dan `contact`.
+- Tombol **Live Demo** dan **Source Code** pada kartu project hanya muncul jika kolom `demo` atau `source` diisi dengan link `https://...`.
+- Nama file bersifat **sensitif huruf besar-kecil** di server Linux (termasuk Vercel). Samakan penulisan nama file dengan yang ada di `import`.
+
+## 📬 Kontak
+
+**Arfansyah Saputra** · Junior Front-End / Full-Stack Developer · Depok, Jawa Barat
+
+- ✉️ [arfansyahsaputra90@gmail.com](mailto:arfansyahsaputra90@gmail.com)
+- 🐙 [github.com/ArfanSyah](https://github.com/ArfanSyah)
+- 💼 [linkedin.com/in/arfansyah](https://linkedin.com/in/arfansyah)
+
+---
+
+© 2026 Arfansyah Saputra
