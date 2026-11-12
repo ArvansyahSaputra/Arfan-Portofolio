@@ -27,8 +27,8 @@ Butuh [Node.js](https://nodejs.org) versi LTS.
 
 ```bash
 # 1. Unduh project
-git clone https://github.com/ArfanSyah/NAMA-REPOSITORY.git
-cd NAMA-REPOSITORY
+git clone https://github.com/ArvansyahSaputra/Arfan-Portofolio.git
+cd Arfan-Portofolio
 
 # 2. Pasang dependensi
 npm install
@@ -61,19 +61,12 @@ Semua teks dan data ada di folder `src/data/`, jadi kamu tidak perlu menyentuh k
 | Teks layar boot dan durasinya | `src/data/boot.js` |
 | Warna, font, bayangan, dan animasi | `src/index.css` (blok `@theme`) |
 
-**Catatan penting**
-
-- File di `public/` dipanggil dengan path yang diawali `/`, **tanpa** kata `public`. Contoh: `/assets/tools/html.png`.
-- `id` tiap `<section>` harus sama dengan yang ada di `data/navigation.js`: `home`, `about`, `skills`, `projects`, dan `contact`.
-- Tombol **Live Demo** dan **Source Code** pada kartu project hanya muncul jika kolom `demo` atau `source` diisi dengan link `https://...`.
-- Nama file bersifat **sensitif huruf besar-kecil** di server Linux (termasuk Vercel). Samakan penulisan nama file dengan yang ada di `import`.
-
 ## 📬 Kontak
 
 **Arfansyah Saputra** · Junior Front-End / Full-Stack Developer · Depok, Jawa Barat
 
 - ✉️ [arfansyahsaputra90@gmail.com](mailto:arfansyahsaputra90@gmail.com)
-- 🐙 [github.com/ArfanSyah](https://github.com/ArfanSyah)
+- 🐙 [github.com/ArvansyahSaputra](https://github.com/ArvansyahSaputra)
 - 💼 [linkedin.com/in/arfansyah](https://linkedin.com/in/arfansyah)
 
 ---
