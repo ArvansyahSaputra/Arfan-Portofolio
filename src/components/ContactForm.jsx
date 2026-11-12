@@ -1,6 +1,6 @@
 import { useState } from "react";
 import RetroButton from "./RetroButton";
-import { EMAIL } from "../data/contact";
+import { EMAIL } from "../data/Contact";
 
 const field =
   "mb-2.5 w-full border-2 border-t-shade border-l-shade border-r-hi border-b-hi bg-hi p-[.8em] text-ink outline-2 outline-ink focus:outline-3 focus:outline-maroon";
