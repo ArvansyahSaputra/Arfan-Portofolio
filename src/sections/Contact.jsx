@@ -1,7 +1,7 @@
 import WindowFrame from "../components/WindowFrame";
 import ContactForm from "../components/ContactForm";
 import RetroButton from "../components/RetroButton";
-import { CONTACTS, EMAIL } from "../data/contact";
+import { CONTACTS, EMAIL } from "../data/Contact";
 import { CV_URL } from "../data/welcome";
 
 export default function Contact() {
