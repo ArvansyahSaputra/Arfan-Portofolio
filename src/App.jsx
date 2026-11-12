@@ -4,6 +4,7 @@ import About from "./sections/About";
 import Skill from "./sections/skill";
 import Project from "./sections/Project";
 import Contact from "./sections/Contact";
+import Taskbar from "./sections/Taskbar";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Skill />
         <Project />
         <Contact />
+        <Taskbar />
       </main>
     </>
   );

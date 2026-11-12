@@ -26,7 +26,7 @@ export default function Contact() {
                   >
                     <span
                       aria-hidden="true"
-                      className="grid size-[34px] flex-none place-items-center bg-ink font-pixel font-bold text-cream"
+                      className="grid size-8.5 flex-none place-items-center bg-ink font-pixel font-bold text-cream"
                     >
                       {c.badge}
                     </span>
