@@ -8,7 +8,7 @@ export default function StartMenu({ id, onClose }) {
     <nav
       id={id}
       aria-label="Menu Start"
-      className="absolute bottom-[calc(100%+6px)] left-0 flex min-w-[230px] border-2 border-ink bg-silver shadow-[inset_2px_2px_0_var(--color-hi),inset_-2px_-2px_0_var(--color-shade),4px_4px_0_var(--color-ink)]"
+      className="absolute bottom-[calc(100%+6px)] left-0 flex min-w-57.5 border-2 border-ink bg-silver shadow-[inset_2px_2px_0_var(--color-hi),inset_-2px_-2px_0_var(--color-shade),4px_4px_0_var(--color-ink)]"
     >
       <div
         aria-hidden="true"

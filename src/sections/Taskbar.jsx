@@ -31,7 +31,7 @@ export default function Taskbar() {
   }, [open]);
 
   return (
-    <footer className="fixed inset-x-0 bottom-0 z-30 flex min-h-[42px] items-center gap-2 border-t-2 border-ink bg-silver px-2 pt-1 pb-[calc(4px+env(safe-area-inset-bottom,0px))] shadow-[inset_0_2px_0_var(--color-hi)]">
+    <footer className="fixed inset-x-0 bottom-0 z-30 flex min-h-10.5 items-center gap-2 border-t-2 border-ink bg-silver px-2 pt-1 pb-[calc(4px+env(safe-area-inset-bottom,0px))] shadow-[inset_0_2px_0_var(--color-hi)]">
       <div ref={startRef} className="relative">
         <RetroButton
           size="xs"
