@@ -1,5 +1,5 @@
 export const PHOTO = "/assets/profile/FotoProfile.png"; // taruh pas foto di public/foto.jpg
-export const CV_URL = "/assets/CV_ATS_Arfansyah_Saputra.pdf"; // taruh file CV di public/
+export const CV_URL = "/assets/CV_Arfansyah_Saputra 2026.pdf"; // taruh file CV di public/
 export const ROLE = "Junior Front-End Developer";
 
 export const ICONS = [
