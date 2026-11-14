@@ -5,19 +5,25 @@ import Skill from "./sections/skill";
 import Project from "./sections/Project";
 import Contact from "./sections/Contact";
 import Taskbar from "./sections/Taskbar";
+import DesktopNotice from "./components/DesktopNotice";
 
 export default function App() {
   return (
     <>
-      <Boot />
-      <main>
-        <Welcome />
-        <About />
-        <Skill />
-        <Project />
-        <Contact />
-        <Taskbar />
-      </main>
+      <div className="lg:hidden">
+        <DesktopNotice />
+      </div>
+      <div className="hidden lg:block">
+        <Boot />
+        <main>
+          <Welcome />
+          <About />
+          <Skill />
+          <Project />
+          <Contact />
+          <Taskbar />
+        </main>
+      </div>
     </>
   );
 }
