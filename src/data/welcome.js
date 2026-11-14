@@ -11,7 +11,7 @@ export const ICONS = [
   {
     label: "GitHub",
     glyph: "🐙",
-    href: "https://github.com/ArfanSyah",
+    href: "https://github.com/ArvansyahSaputra",
     external: true,
   },
 ];
